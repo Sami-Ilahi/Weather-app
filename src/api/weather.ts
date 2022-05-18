@@ -16,7 +16,7 @@ export const fetchExtendedForecastData = async (
 ) => {
   // Get coordinates for a city using a free API
   let data = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}$&limit=1&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city}$&limit=1&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
   );
   const coordinates = await data.json();
 

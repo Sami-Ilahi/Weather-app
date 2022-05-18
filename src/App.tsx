@@ -1,4 +1,4 @@
-import React from "react";
+import { Helmet } from "react-helmet";
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./app.styled";
@@ -11,6 +11,15 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>WEATHERIFY</title>
+        <link rel='canonical' href='https://weathrify.netlify.app/' />
+        <meta
+          name='description'
+          content='Weather forecasts for thousands of locations around the world'
+        />
+      </Helmet>
       <Home />
     </ThemeProvider>
   );
