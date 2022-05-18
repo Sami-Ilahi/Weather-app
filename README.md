@@ -5,10 +5,10 @@
 
 ### Features
 
-7 days forecast.
-Find user location weather using GeolocationAPI.
-Conversion from Celcius to Fahrenheit and vice versa.
-Dark and Light Mode.
+- \*\*7 days forecast.
+- \*\*Find user location weather using GeolocationAPI.
+- \*\*Conversion from Celcius to Fahrenheit and vice versa.
+- \*\*Dark and Light Mode.
 
 ![](src/assets/weather.jpg)
 ![](src/assets/weather1.jpg)
